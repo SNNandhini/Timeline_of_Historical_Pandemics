@@ -8,8 +8,29 @@
 -   	Siyuan Liang 
 -   	Salma Abdirahman
 
+## Aim of the Project
+
+The aim of this project was to use ETL (Extract, Transform and Load) Pipeline. We had picked out a dataset from Kaggle which we think suited the needs of our project. We then went on extracting the data, cleaning it through Jupyter and loading it onto Postgresql.
+
+
 ## Extraction
 
+The dataset is comprised of 9 CSV files from Kaggle.com, compiled by the CDC (Centres for Disease Control and Prevention), which provides a record of several major historical disease outbreaks. The files include data on aspects such as the type of disease/outbreak, the location and timing of such outbreaks, its death toll and a number of other information.
+ 
+Link to dataset: https://www.kaggle.com/datasets/thedevastator/a-comprehensive-history-of-major-disease-outbrea
+ 
+Files:
+- df_1.csv
+- df_11.csv
+- df_16.csv
+- df_2.csv
+- df_22.csv
+- df_24.csv
+- df_25.csv
+- df_4.csv
+- df_5.csv
+
+As a group we had decided to drop files that either were copies of other files or showed no relevant data. This included files: df_11.csv, ...
 
 ## Transformation
 
@@ -18,13 +39,12 @@ I had to prepare the data found in the df_16, which is the table that shows diff
 
 I first had to rename the columns, as there were only 2 columns, named 0 and 1. I renamed them ‘Period and ‘Epidemic .
  
-
 I then cleaned the data by separating each epidemic , but that yielded more than 70 columns. 
-
 
 Finally, I have merged the ‘Period’ and ‘Epidemic’ column into one table but with only 2 columns, instead of the more than 70 which I would have gotten before . That was possible by using the iterrows function and put each epidemic period in a different column.
  
 The newly created csv file was then transferred to a SQL database.
+
 
 
 ### Salma
@@ -39,13 +59,21 @@ From that alone the data showed the rank of such natural disasters with geologic
 
 Finally, the csv file was then loaded on to a SQL database.
 
+
+
 ### Nandhini
+<insert>
+
 
 
 ### Patricia
+<insert>
+
 
 
 ### Siyuan
+<insert>
+
 
 
 ## Loading
