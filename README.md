@@ -1,4 +1,4 @@
- ##Razvan
+##Razvan
 I had to prepare the data found in the df_16, which is the table that shows different epidemics based on the historical periods that happened.
 
 I first had to rename the columns, as there were only 2 columns, named 0 and 1. I renamed them ‘Period and ‘Epidemic .
@@ -12,7 +12,7 @@ Finally, I have merged the ‘Period’ and ‘Epidemic’ column into one table
 The newly created csv file was then transferred to a SQL database.
 
 
- ##Salma
+##Salma
 
 By looking at the data from df_4 I had decided to start cleaning the data by renaming the columns. The data itself was based on natural disasters that were categorised. These natural disasters were then further distinguished as subcategories.
 
