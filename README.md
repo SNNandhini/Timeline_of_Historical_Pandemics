@@ -1,7 +1,7 @@
 # Project 2 - Group 2: Timeline of Historical Pandemics
 ![image](https://user-images.githubusercontent.com/111789352/203872440-2bfee4c2-ea1b-4bff-8fe6-ada92cb712c4.png)
 
-##Contributors
+## Contributors
 -   	Nandhini Nallathambi 
 -   	Patricia Colomer
 -   	Razvan Radu 
@@ -11,7 +11,7 @@
 ## Extraction
 
 
-##Transform
+## Transformation
 
 ### Razvan
 I had to prepare the data found in the df_16, which is the table that shows different epidemics based on the historical periods that happened.
@@ -48,7 +48,7 @@ Finally, the csv file was then loaded on to a SQL database.
 ### Siyuan
 
 
-## Load
+## Loading
 
 
 ##Conclusions
