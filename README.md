@@ -9,5 +9,5 @@ I then cleaned the data by separating each epidemic , but that yielded more than
 
 Finally, I have merged the ‘Period’ and ‘Epidemic’ column into one table but with only 2 columns, instead of the more than 70 which I would have gotten before . That was possible by using the iterrows function and put each epidemic period in a different column.
  
-The newly created csv file i transferred it to a SQL database.
+The newly created csv file was then transferred to a SQL database.
 -------Razvan--------
