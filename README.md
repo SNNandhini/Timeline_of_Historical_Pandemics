@@ -74,6 +74,7 @@ Finally, the original columns for the above were dropped and the new cleaned up 
 
 
 ### Patricia
+
 I prepared the data from df_1.csv. I started by deleting the extra columns that were not needed and then proceeded to clean the data in the remaining columns. 
 I started by separating in two columns the ones that had a range: Death Toll, Global Population Lost, Regional Population Lost and Date. i created one column for each minimum and maximun range, and for the Date column, the start date and the end date. Those columns were the added to the dataframe, and the original columns were dropped. I also replaced the blank elements or elements that had a reference with "unknown" so it is easier for the reader to understand.
 
@@ -84,7 +85,12 @@ With the data cleaned and in a more visually attractive format, the dataframe wa
 
 
 ### Siyuan
-<insert>
+
+By looking at the data from df_24, I had decided to separate the different medicines into each category by analysing whether their initial capitals. There were total 7 lists. I dropped first row and final row as they are irrelevant data with this project and finished the separation of each medicine in original document. And then there were total 5 lists.
+
+After cleaning this data, I set a dataframe by using pandas with different column names: ‘Histories of basic sciences’, ‘Histories of medical specialties’, ‘Medicine in ancient societies’, ‘History of methods in medicine’, ‘Disasters and plagues’.
+
+Later, this dataframe was used to as csv and being put into SQL for further analysis.
 
 
 
@@ -96,6 +102,14 @@ We created the following ERD to represent the schema of the database.
 After the clean up, we understood that the files df_2 (all outbreaks) and df_1 (major_outbreaks) had data in common and df_1 was a subset of df_2. So we created the tables **events_details** and **major_outbreaks** respectively, with events as the primary key. As events_details had the columns for location, disease, min and max death toll, start and end years, these were ignored in the major_outbreaks. We created a foreign key on events with the events_details table.
 
 We had initially planned for **periods** table (file df_16) to be linked with the events_details and major_outbreaks tables. However, the data in the periods table was insufficient and so we made it an independent table along with **natural_disasters**(file df_4) and **medical_technologies**(file df_24) tables.
+
+To upload the data, we made a connection to the PostgreSQL from Python using SQLAlchemy. We created a .env with the variables required for the connection string. The data from the file wass then loaded using the load_dotenv() function. We added the .env file to the .gitignore file, so that it is not uploaded to GitHub. 
+
+The .env file is as follows:
+
+![image](https://user-images.githubusercontent.com/111614210/204028437-0ae42244-1406-4bbc-b512-8417c7ba1d15.png)
+
+After the connection was made, we uploaded the files using to_sql() function.
 
 The cleaned up data were uploaded into the tables under pandemics_db in PostgreSQL. 
 
