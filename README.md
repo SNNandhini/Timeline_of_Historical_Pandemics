@@ -63,7 +63,13 @@ Finally, the csv file was then loaded on to a SQL database.
 
 ### Nandhini
 
+I cleaned up the file df_2.csv. I started off by selecting the required columns and leaving the rest. The names of the epidemics were different for certain entries in df_2 and df_1. In order to match the names, I copied and replaced the names of the major outbreaks from df_1 using Date as the key using pandas merge and numpy. This helped with the creation of primary and foreign keys while uploading data on to the PostgreSQL at a later stage.
 
+The Date column in the file captured the years of the start and end of events along with BC and AD (example: 429-426 BC). I split this into 3 namely Start_Year, End_Year and BC_AD. Also there were entries that had only one value. In such cases, I populated the available year into both the Start and End Year columns. Some entries had texts along with the years and I deleted those unnecessary strings. There were entries for the ongoing pandemics with an end date of "present" (example: COVID-19 pandemic	2019-present). I replaced "present" with 9999, which is a common practice to represent the ongoing or future events. This will also help with the data load as these are numeric fields.
+
+The Death Toll column had the minimum and maximum estimates along with comments. So in order to preserve the comments, I copied the column into a comments field. Similar to the Date column, I split this into minimum and maximum death toll. There were entries with the word million (example: 5–10 million). I replaced the string with the actual value. So 5 million was captured as 5000000. The formatting in the column, like commas, were removed for easing the data load process. The text present were removed leaving only the numbers. There were entries with the word "Unknown". These words were removed and replaced with null, as these are numeric fields.
+
+Finally, the original columns for the above were dropped and the new cleaned up columns were left in place. This cleaned up dataframe was then used for dataload.
 
 
 
@@ -77,7 +83,7 @@ Finally, the csv file was then loaded on to a SQL database.
 
 
 
-## Loading
+## Data Load
 
 
-##Conclusions
+## Conclusions
