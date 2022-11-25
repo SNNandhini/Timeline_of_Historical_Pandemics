@@ -74,7 +74,12 @@ Finally, the original columns for the above were dropped and the new cleaned up 
 
 
 ### Patricia
-<insert>
+I prepared the data from df_1.csv. I started by deleting the extra columns that were not needed and then proceeded to clean the data in the remaining columns. 
+I started by separating in two columns the ones that had a range: Death Toll, Global Population Lost, Regional Population Lost and Date. i created one column for each minimum and maximun range, and for the Date column, the start date and the end date. Those columns were the added to the dataframe, and the original columns were dropped. I also replaced the blank elements or elements that had a reference with "unknown" so it is easier for the reader to understand.
+
+By having those columns separated, I could then calculate the average for the death toll and the durantion in years for the dates, that gives more clarity to our analysis.
+
+With the data cleaned and in a more visually attractive format, the dataframe was loaded on to a SQL database.
 
 
 

@@ -1,0 +1,20 @@
+Rank,Epidemics/pandemics,Disease,Location,Minimum Death Toll,Maximum Death Toll,Average Death Toll,minimum_population_lost,maximum_population_lost,Minimum Regional Population Lost,Maximum Regional Population Lost,Year Pandemic Started,Year Pandemic Finished,Duration (years)
+1,Black Death,Bubonic plague,"Europe, Asia, and North Africa",75.0,200.0,137.5,17,54,30,60,1346,1353,7
+2,Spanish flu,Influenza A/H1N1,Worldwide,17.0,100.0,58.5,1,5.4,unknown,unknown,1918,1920,2
+3,Plague of Justinian,Bubonic plague,"North Africa, Europe and West Asia",15.0,100.0,57.5,7,56,25,60,541,549,8
+4,HIV/AIDS global pandemic,HIV/AIDS,Worldwide,40.1,40.1,40.1,unknown,unknown,unknown,unknown,1981,2022,41
+5,COVID-19 pandemic,COVID-19,Worldwide,7.0,28.0,17.5,0.1,0.4,unknown,unknown,2019,2022,3
+6,Third plague pandemic,Bubonic plague,Worldwide,12.0,15.0,13.5,unknown,unknown,unknown,unknown,1855,1960,105
+7,Cocoliztli epidemic of 1545–1548,Cocoliztli,Mexico,5.0,15.0,10.0,1,3,27,80,1545,1548,3
+8,Antonine Plague,Smallpox or measles,Roman Empire,5.0,10.0,7.5,3,6,25,33,165,180,15
+9,1520 Mexico smallpox epidemic,Smallpox,Mexico,5.0,8.0,6.5,1,2,23,37,1519,1520,1
+10,1918–1922 Russia typhus epidemic,Typhus,Russia,2.0,3.0,2.5,0.1,0.16,1,1.6,1918,1922,4
+11,1957–1958 influenza pandemic,Influenza A/H2N2,Worldwide,1.0,4.0,2.5,0.03,0.1,unknown,unknown,1957,1958,1
+12,Hong Kong flu,Influenza A/H3N2,Worldwide,1.0,4.0,2.5,0.03,0.1,unknown,unknown,1968,1969,1
+13,Cocoliztli epidemic of 1576,Cocoliztli,Mexico,2.0,2.5,2.25,0.4,0.5,50,50,1576,1580,4
+14,735–737 Japanese smallpox epidemic,Smallpox,Japan,2.0,2.0,2.0,1,1,33,33,735,737,2
+15,1772–1773 Persian Plague,Bubonic plague,Persia,2.0,2.0,2.0,0.2,0.3,unknown,unknown,1772,1773,1
+16,Naples Plague,Bubonic plague,Southern Italy,1.25,1.25,1.25,0.2,0.2,unknown,unknown,1656,1658,2
+17,1846–1860 cholera pandemic,Cholera,Worldwide,1.0,1.0,1.0,0.08,0.08,unknown,unknown,1846,1860,14
+18,1629–1631 Italian plague,Bubonic plague,Italy,1.0,1.0,1.0,0.2,0.2,unknown,unknown,1629,1631,2
+19,1889–1890 flu pandemic,Influenza (disputed)[13][14],–,1.0,1.0,1.0,0.07,0.07,unknown,unknown,1889,1890,1
