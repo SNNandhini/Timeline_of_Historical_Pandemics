@@ -20,17 +20,17 @@ The dataset is comprised of 9 CSV files from Kaggle.com, compiled by the CDC (Ce
 Link to dataset: https://www.kaggle.com/datasets/thedevastator/a-comprehensive-history-of-major-disease-outbrea
  
 Files:
-- df_1.csv
-- df_11.csv
-- df_16.csv
-- df_2.csv
-- df_22.csv
-- df_24.csv
-- df_25.csv
-- df_4.csv
-- df_5.csv
+- df_1.csv - This file contains the details of all major outbreaks with the death toll of over a million.
+- df_2.csv - This file contains the details of all outbreaks that have happened since the ancient times.
+- df_4.csv - This file contains the list of all natural disasters by the estimated number of deaths.
+- df_5.csv - This is a subset of df_4.
+- df_11.csv - This is a copy of df_5.
+- df_16.csv - This file contains the epidemics categorised by historical periods.
+- df_22.csv - This is a subset of df_16.
+- df_24.csv - This file contains the history of medicine.
+- df_25.csv - This file contains public health notes.
 
-As a group we had decided to drop files that either were copies of other files or showed no relevant data. This included files: df_11.csv, ...
+As a group we had decided to drop files that either were copies of other files or showed no relevant data. This included files: df_5, df_11.csv, df_22.csv and df_25.csv
 
 ## Transformation
 
@@ -62,7 +62,8 @@ Finally, the csv file was then loaded on to a SQL database.
 
 
 ### Nandhini
-<insert>
+
+
 
 
 
