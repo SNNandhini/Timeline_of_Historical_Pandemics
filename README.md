@@ -97,11 +97,12 @@ Later, this dataframe was used to as csv and being put into SQL for further anal
 ## Data Load
 
 We created the following ERD to represent the schema of the database.
-![image](https://user-images.githubusercontent.com/111614210/203915425-9d06a4ba-33fa-4003-9228-68e7edbb6ff6.png)
+
+![image](https://user-images.githubusercontent.com/111614210/204057095-988f6730-a20b-43dd-a309-c30ed3c49fae.png)
 
 After the clean up, we understood that the files df_2 (all outbreaks) and df_1 (major_outbreaks) had data in common and df_1 was a subset of df_2. So we created the tables **events_details** and **major_outbreaks** respectively, with events as the primary key. As events_details had the columns for location, disease, min and max death toll, start and end years, these were ignored in the major_outbreaks. We created a foreign key on events with the events_details table.
 
-We had initially planned for **periods** table (file df_16) to be linked with the events_details and major_outbreaks tables. However, the data in the periods table was insufficient and so we made it an independent table along with **natural_disasters**(file df_4) and **medical_technologies**(file df_24) tables.
+We had initially planned for **periods** table (file df_16) to be linked with the events_details and major_outbreaks tables. However, the data in the periods table was insufficient and so we made it an independent table along with **natural_disasters** (file df_4) and **medical_technologies** (file df_24) tables.
 
 To upload the data, we made a connection to the PostgreSQL from Python using SQLAlchemy. We created a .env with the variables required for the connection string. The data from the file wass then loaded using the load_dotenv() function. We added the .env file to the .gitignore file, so that it is not uploaded to GitHub. 
 
