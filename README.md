@@ -85,5 +85,10 @@ Finally, the original columns for the above were dropped and the new cleaned up 
 
 ## Data Load
 
+The cleaned up data from above were uploaded to the PostgreSQL. We created the following ERD to represent the schema of the database.
+
 
 ## Conclusions
+ 
+ 
+## Files Uploaded 
