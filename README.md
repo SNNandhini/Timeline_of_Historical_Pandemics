@@ -85,7 +85,14 @@ Finally, the original columns for the above were dropped and the new cleaned up 
 
 ## Data Load
 
-The cleaned up data from above were uploaded to the PostgreSQL. We created the following ERD to represent the schema of the database.
+We created the following ERD to represent the schema of the database.
+![image](https://user-images.githubusercontent.com/111614210/203915425-9d06a4ba-33fa-4003-9228-68e7edbb6ff6.png)
+
+After the clean up, we understood that the files df_2 (all outbreaks) and df_1 (major_outbreaks) had data in common and df_1 was a subset of df_2. So we created the tables **events_details** and **major_outbreaks** respectively, with events as the primary key. As events_details had the columns for location, disease, min and max death toll, start and end years, these were ignored in the major_outbreaks. We created a foreign key on events with the events_details table.
+
+We had initially planned for **periods** table to be linked with the events_details and major_outbreaks tables. However, the data in the periods table was insufficient and so we made it an independent table along with **natural_disasters** and **medical_technologies** tables.
+
+The cleaned up data were uploaded into the tables under pandemics_db in PostgreSQL. 
 
 
 ## Conclusions
