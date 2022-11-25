@@ -116,8 +116,11 @@ The cleaned up data were uploaded into the tables under pandemics_db in PostgreS
 
 ## Conclusions
 
- With the recent experience of COVID-19, it is clear that pandemics are not a thing of the past. Health authorities say it’s not a matter of IF a new pandemic will happen, but WHEN. 
-This analysis can be used to predict future disease outbreaks by identifying patterns and trends in past outbreaks and also to develop better strategies to respond to the event.
+With the recent experience of COVID-19, it is clear that pandemics are not a thing of the past. Health authorities say it’s not a matter of IF a new pandemic will happen, but WHEN. 
+
+This was a major contributing factor when deciding what data we would pick and what we would base our project around. As we wanted to look into historical pandemics which much like COVID-19 did to us, greatly affected the lives of those before us.
+
+This analysis can be used to predict future disease outbreaks by identifying patterns and trends in past outbreaks and also to develop better strategies to respond to the event. Analysing such data and reflecting on the past would be particularly useful in the in the disease surveillance and prevention by not only the World Health Organisation but that of governmental organisations such as Public Health England.
 
  
 ## Files Uploaded 
