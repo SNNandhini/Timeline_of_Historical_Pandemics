@@ -104,15 +104,17 @@ After the clean up, we understood that the files df_2 (all outbreaks) and df_1 (
 
 We had initially planned for **periods** table (file df_16) to be linked with the events_details and major_outbreaks tables. However, the data in the periods table was insufficient and so we made it an independent table along with **natural_disasters** (file df_4) and **medical_technologies** (file df_24) tables.
 
-To upload the data, we made a connection to the PostgreSQL from Python using SQLAlchemy. We created a .env with the variables required for the connection string. The data from the file wass then loaded using the load_dotenv() function. We added the .env file to the .gitignore file, so that it is not uploaded to GitHub. 
+To upload the data, we made a connection to the PostgreSQL from Python using SQLAlchemy. We created a .env with the variables required for the connection string. The data from the file was then loaded using the load_dotenv() function. We added the .env file to the .gitignore file, so that it is not uploaded to GitHub. 
 
 The .env file is as follows:
 
 ![image](https://user-images.githubusercontent.com/111614210/204028437-0ae42244-1406-4bbc-b512-8417c7ba1d15.png)
 
-After the connection was made, we uploaded the files using to_sql() function.
+After the connection was made, we uploaded the data from the final dataframes using to_sql() function.
 
 The cleaned up data were uploaded into the tables under pandemics_db in PostgreSQL. 
+
+![image](https://user-images.githubusercontent.com/111614210/204061841-a0dcc759-1033-434d-be60-0510d74b83f9.png)
 
 
 ## Conclusions
@@ -125,3 +127,9 @@ This analysis can be used to predict future disease outbreaks by identifying pat
 
  
 ## Files Uploaded 
+- **Project Proposal document** - Project 2 (ETL) – Proposal.docx
+- **Input csv files** - in the Resources folder
+- **Data Prep Jupyter Notebook** - Pandemics_Extract_Transform_Load.ipynb
+- **Data Load SQL file** - Pandemics_Data_Load.sql
+- **ERD and documentation** - in the ERD folder
+- **Final Project Report** - Timeline of Historical Pandemics - Final Report.pdf
